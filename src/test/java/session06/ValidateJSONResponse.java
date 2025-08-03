@@ -17,11 +17,11 @@ public class ValidateJSONResponse {
 	public void ValidateJSONResponse()
 	{
 		
-		//given().header("Authorization","Bearer sk_test_51Qhx7kCE75m07UUcYnFJiu0EWLMf72IryOfNoAtHMuohzjsStmOga2TsRidYY6ACJPEQzjzD2QCB6LGzmBFn7Igl00XExus2Ju");
+		
 		RequestSpecification reqSpec = RestAssured.given();
 		reqSpec.baseUri("https://api.stripe.com");
 		reqSpec.basePath("/v1/customers");
-		reqSpec.header("Authorization","Bearer sk_test_51Qhx7kCE75m07UUcYnFJiu0EWLMf72IryOfNoAtHMuohzjsStmOga2TsRidYY6ACJPEQzjzD2QCB6LGzmBFn7Igl00XExus2Ju");
+		reqSpec.header("kjdshkjhjk","Bearer toekn");
 		Response response = reqSpec.get();
 		
 		ResponseBody responsebody = response.getBody();
