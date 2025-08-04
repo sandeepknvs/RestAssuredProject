@@ -11,7 +11,7 @@ public class Test_GetMethod {
 	@Test
 	public void Test01()
 	{
-		given().header("Authorization","Bearer sk_test_51Qhx7kCE75m07UUcYnFJiu0EWLMf72IryOfNoAtHMuohzjsStmOga2TsRidYY6ACJPEQzjzD2QCB6LGzmBFn7Igl00XExus2Ju")
+		given()
 		
 		.when().get("https://api.stripe.com/v1/customers")
 		.then().statusCode(200).log().all();
@@ -20,7 +20,7 @@ public class Test_GetMethod {
 	//@Test
 	public void Test02()
 	{
-		given().header("Authorization","Bearer sk_test_51Qhx7kCE75m07UUcYnFJiu0EWLMf72IryOfNoAtHMuohzjsStmOga2TsRidYY6ACJPEQzjzD2QCB6LGzmBFn7Igl00XExus2Ju")
+		given()
 		.formParam("name", "chaturveda").formParam("email", "chatur@mail.com").formParam("description", "i look like joshna")
 		.when().post("https://api.stripe.com/v1/customers")
 		.then().statusCode(200).log().all();
@@ -28,7 +28,7 @@ public class Test_GetMethod {
 	//@Test
 	public void Test03()
 	{
-		given().header("Authorization","Bearer sk_test_51Qhx7kCE75m07UUcYnFJiu0EWLMf72IryOfNoAtHMuohzjsStmOga2TsRidYY6ACJPEQzjzD2QCB6LGzmBFn7Igl00XExus2Ju")
+		given()
 		.when().delete("https://api.stripe.com/v1/customers/cus_Smb1Sg0jorrRw9")
 		.then().statusCode(200).log().all();
 	}
@@ -36,7 +36,7 @@ public class Test_GetMethod {
 	//@Test
 	public void Test04()
 	{
-		given().header("Authorization","Bearer sk_test_51Qhx7kCE75m07UUcYnFJiu0EWLMf72IryOfNoAtHMuohzjsStmOga2TsRidYY6ACJPEQzjzD2QCB6LGzmBFn7Igl00XExus2Ju")
+		given()
 		.formParam("name", "chaturrrr")
 		.when().post("https://api.stripe.com/v1/customers/cus_Smb7vokzWM8CIo")
 		.then().statusCode(200).log().all();

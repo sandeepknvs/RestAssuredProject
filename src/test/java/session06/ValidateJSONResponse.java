@@ -21,7 +21,6 @@ public class ValidateJSONResponse {
 		RequestSpecification reqSpec = RestAssured.given();
 		reqSpec.baseUri("https://api.stripe.com");
 		reqSpec.basePath("/v1/customers");
-		reqSpec.header("kjdshkjhjk","Bearer toekn");
 		Response response = reqSpec.get();
 		
 		ResponseBody responsebody = response.getBody();
