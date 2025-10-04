@@ -14,8 +14,8 @@ public class WorkingWithQueryParams {
 		RequestSpecification reqSpec = RestAssured.given();
 		reqSpec.baseUri("https://api.stripe.com");
 		reqSpec.basePath("/v1/customers");
-		//reqSpec.header("kjdhkhkj","Bearer token");
-		reqSpec.queryParam("limit", 5);
+		reqSpec.header("Authorization","Bearer sk_test_51Qhx7kCE75m07UUcYnFJiu0EWLMf72IryOfNoAtHMuohzjsStmOga2TsRidYY6ACJPEQzjzD2QCB6LGzmBFn7Igl00XExus2Ju");
+		//reqSpec.queryParam("limit", 5);
 		//reqSpec.queryParam("id", "cus_Smb7vokzWM8CIo");
 		Response response = reqSpec.get();
 		

@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-08-03T23:36:25 IST" name="Default suite" finished-at="2025-08-03T23:36:29 IST" duration-ms="3584">
+  <suite started-at="2025-08-16T14:35:27 IST" name="Default suite" finished-at="2025-08-16T14:35:31 IST" duration-ms="3149">
     <groups>
     </groups>
-    <test started-at="2025-08-03T23:36:25 IST" name="Default test" finished-at="2025-08-03T23:36:29 IST" duration-ms="3584">
+    <test started-at="2025-08-16T14:35:27 IST" name="Default test" finished-at="2025-08-16T14:35:31 IST" duration-ms="3149">
       <class name="session07.WorkingWithQueryParams">
-        <test-method signature="queryParams()[pri:0, instance:session07.WorkingWithQueryParams@31304f14]" started-at="2025-08-03T23:36:26 IST" name="queryParams" finished-at="2025-08-03T23:36:29 IST" duration-ms="3531" status="PASS">
+        <test-method signature="queryParams()[pri:0, instance:session07.WorkingWithQueryParams@31304f14]" started-at="2025-08-16T14:35:28 IST" name="queryParams" finished-at="2025-08-16T14:35:31 IST" duration-ms="3080" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- queryParams -->
