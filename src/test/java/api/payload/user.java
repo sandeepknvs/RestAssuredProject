@@ -1,16 +1,17 @@
 package api.payload;
 
 public class user {
-	 int id;
-	 String username;
-	 String firstname;
-	 String lastname;
-	 String email;
-	 String password;
-	 String phone;
-	 
-	 
-	 public int getId() {
+	  int id;
+	  String username;
+	  String firstName;
+	  String lastName;
+	  String email;
+	  String password;
+	  String phone;
+	  int userStatus=0;
+	  
+	  
+	public int getId() {
 		return id;
 	}
 	public void setId(int id) {
@@ -22,17 +23,17 @@ public class user {
 	public void setUsername(String username) {
 		this.username = username;
 	}
-	public String getFirstname() {
-		return firstname;
+	public String getFirstName() {
+		return firstName;
 	}
-	public void setFirstname(String firstname) {
-		this.firstname = firstname;
+	public void setFirstName(String firstName) {
+		this.firstName = firstName;
 	}
-	public String getLastname() {
-		return lastname;
+	public String getLastName() {
+		return lastName;
 	}
-	public void setLastname(String lastname) {
-		this.lastname = lastname;
+	public void setLastName(String lastName) {
+		this.lastName = lastName;
 	}
 	public String getEmail() {
 		return email;
@@ -52,11 +53,11 @@ public class user {
 	public void setPhone(String phone) {
 		this.phone = phone;
 	}
-	public int getUserstatus() {
-		return userstatus;
+	public int getUserStatus() {
+		return userStatus;
 	}
-	public void setUserstatus(int userstatus) {
-		this.userstatus = userstatus;
+	public void setUserStatus(int userStatus) {
+		this.userStatus = userStatus;
 	}
-	int userstatus;
+	  
 }

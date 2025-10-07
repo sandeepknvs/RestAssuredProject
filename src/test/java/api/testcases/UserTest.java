@@ -22,8 +22,8 @@ public class UserTest {
 		userPayload = new user();
 		userPayload.setId(faker.idNumber().hashCode());
 		userPayload.setUsername(faker.name().username());
-		userPayload.setFirstname(faker.name().firstName());
-		userPayload.setLastname(faker.name().lastName());
+		userPayload.setFirstName(faker.name().firstName());
+		userPayload.setLastName(faker.name().lastName());
 		userPayload.setEmail(faker.internet().safeEmailAddress());
 		userPayload.setPassword(faker.internet().password(5, 10));
 		userPayload.setPhone(faker.phoneNumber().cellPhone());
@@ -53,7 +53,7 @@ public class UserTest {
 	public void testUpdateUserData()
 	{
 		System.out.println("Updating User Data");
-		userPayload.setFirstname(faker.name().firstName());
+		userPayload.setFirstName(faker.name().firstName());
 		Response response =  userEndPoints.updateUser(this.userPayload.getUsername(), userPayload);
 		response.then().log().all();
 		
